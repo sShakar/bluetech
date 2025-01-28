@@ -1,0 +1,155 @@
+@use 'variables' as *;
+
+.primary {
+	color: $primary;
+}
+
+.bg-primary {
+	background-color: $primary;
+}
+
+.secondary {
+	color: $secondary;
+}
+
+.bg-secondary {
+	background-color: $secondary;
+}
+
+.accent {
+	color: $accent;
+}
+
+.bg-accent {
+	background-color: $accent;
+}
+
+.background {
+	color: $background;
+}
+
+.bg-background {
+	background-color: $background;
+}
+
+.bg-light-shade{
+	background :#f4f3f2 !important;
+}
+
+.bg-dark-shade{
+	background :$dark-shade;
+}
+
+.bg-light{
+	background: $light;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.modal {
+	position: absolute;
+	width: 50%;
+}
+
+@media (max-width: 768px) {
+	.modal {
+		width: 90%;
+	}
+}
+
+@media (min-width: 600px) {
+	.q-dialog__inner--minimized > div {
+		max-width: 100%;
+	}
+}
+
+.q-table th {
+	font-weight: bolder;
+	font-size: 0.9rem;
+}
+
+.leaflet-control-attribution {
+	display: none;
+}
+
+@media print {
+	.ignorePrint {
+		display: none;
+	}
+}
+
+.customTimer input[type='time']::-webkit-datetime-edit-fields-wrapper {
+	margin-left: 5px;
+}
+
+.customTimer input[type='time']::-webkit-datetime-edit-text {
+	margin: 0 8px;
+}
+
+.customTimer input[type='time']::-webkit-calendar-picker-indicator {
+	margin-bottom: 12px;
+	font-size: 18px;
+	filter: opacity(45%) grayscale(100%);
+}
+
+.body--light {
+	background-color: $light;
+	color: $dark;
+	.q-card {
+		background-color: $light;
+	}
+	.q-page{
+		background-color: $light;
+	}
+	.q-scroll-area{
+		background-color: $light;
+	}
+	.q-table__card {
+		background-color: $light;
+		color: $dark;
+	}
+	.q-field--float .q-field__label {
+		background-color: $light;
+		color: $dark;
+	}
+}
+
+
+
+.body--dark {
+	.q-layout__section--marginal {
+		background-color: $dark;
+		color: $light;
+	}
+	.q-drawer {
+		background: $dark;
+		color: $light;
+		border-color: rgba(255, 255, 255, 0.28) !important;
+	}
+	.q-page{
+		background-color: $dark;
+	}
+	.q-card {
+		background: $dark;
+		color: $light;
+	}
+	.q-scroll-area{
+		background-color: $dark;
+	}
+	.q-table__card {
+		background: $dark;
+		color: $light;
+	}
+	.q-field--float .q-field__label {
+		//background-color: $dark-page;
+		color: $light;
+	}
+}
