@@ -7,7 +7,7 @@ import logoutUser from '@/helpers/logoutUser';
  *  @description Initialize axios instance with default configuration
  */
 export const axiosInstance = axios.create({
-	baseURL: import.meta.env.VITE_DEFAULT_BASE_API
+	baseURL: import.meta.env.VITE_BASE_API
 });
 
 axiosInstance.interceptors.request.use(requestCallback, errorCallback);

@@ -2,7 +2,7 @@
 	<q-header class="bg-light text-black" bordered>
 		<q-toolbar>
 			<q-btn icon="mdi-menu" dense flat round @click="sidebarStore.toggleSidebar" />
-			<!--			<img alt="logo" src="@/assets/img/logo.png" width="40" />-->
+						<img alt="logo" src="@/assets/img/blueline.png" width="40" />
 			<q-toolbar-title class="q-gutter-md q-mr-md flex justify-end items-center">
 				<!--				<q-btn class="q-mr-sm" dense flat icon="mdi-theme-light-dark" round @click="toggleTheme()" />-->
 
